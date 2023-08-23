@@ -1,7 +1,7 @@
 const express = require("express");
 const { somar, subtrair, multiplicar, dividir } = require("./calculadora.js");
 const app = express();
-const porta = 3000;
+const porta = 3001;
 
 app.get("/rota", (requisicao, resposta) => {
   const respostaDaSoma = somar(2, 3);
